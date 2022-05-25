@@ -1,0 +1,72 @@
+.landing-page {
+  height: 100vh;
+  background: linear-gradient(196deg, #a5b5f9 0%, #73fcf4 71%, #00d4ff 100%);
+}
+
+.landing-header {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  position: relative;
+  top: 100px;
+  left: 125px;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  width: 730px;
+}
+
+.landing-header h1 {
+
+  font-size: 60px;
+}
+
+.btn-started {
+  background-color: #F5FF80;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: black;
+  text-shadow: none;
+  padding: 12px 40px;
+  position: relative;
+  top: 28px;
+  font-size: 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.btn-started:hover {
+  transform: scale(1.2);
+}
+
+.decks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 32px;
+  margin-top: 48px;
+}
+
+.deck {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 32px 0;
+  border-radius: 4px;
+  transition: 300ms;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+  }
+}
+
+.landing-info {
+  margin-top: 48px;
+  padding: 0 42px;
+  h1 {
+    text-align: center;
+  }
+}
+
+.about {
+  margin-top: 48px;
+}

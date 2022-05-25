@@ -1,0 +1,46 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: rgb(207, 211, 239);
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.avatar {
+  height: 48px;
+  border-radius: 50%;
+}
+
+.nav-logo {
+  border-radius: 50%;
+}
+
+.navbar {
+  background-color: #23242F;
+}
+
+
+.nav-item a {
+  color: white;
+  border: 2px solid #5DE1E6;
+  border-radius: 4px;
+}
+
+.nav-item a:hover {
+  background-color: #3f4052;
+  color: white;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 100px;
+}

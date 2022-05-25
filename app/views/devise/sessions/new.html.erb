@@ -1,0 +1,31 @@
+
+<div class="login-page">
+  <div class='faros-login'>
+    <%= image_tag('faros.jpeg') %>
+  </div>
+
+  <div class='login-form'>
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="form-inputs">
+        <%= f.input :email,
+                    required: false,
+                    autofocus: true,
+                    input_html: { autocomplete: "email" } %>
+        <%= f.input :password,
+                    required: false,
+                    input_html: { autocomplete: "current-password" } %>
+        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      </div>
+
+      <div class="form-actions">
+        <p><%= f.button :submit, "Log in" %></p>
+      </div>
+    <% end %>
+    <div class='btn-sign-up'>
+      <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+        <%= link_to "Sign up", new_registration_path(resource_name)%>
+      <% end %>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,48 @@
+.login-page {
+  display: flex;
+  background-color: #23242F;
+}
+
+.faros-login img {
+height: 100vh;
+}
+
+.login-form {
+  width: 100%;
+  padding: 110px 196px;
+  color: white;
+  margin-top: 100px;
+}
+
+.form-actions {
+  background-color: #5DE1E6;
+  font-size: 24px;
+  border-radius: 4px;
+  color: white;
+}
+
+.form-actions p {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.btn-sign-up {
+  border: 2px solid #5DE1E6;
+  border-radius: 4px;
+  max-width: 100%;
+  text-align: center;
+  padding: 6px;
+
+}
+
+.btn-sign-up a {
+  text-decoration: none;
+  color: white;
+}
+
+
+// color: white;
+// font-size: 19px;
+// height: 42px;
+// text-align: center;

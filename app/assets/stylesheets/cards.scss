@@ -1,0 +1,122 @@
+// Place all the styles related to the cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.cards {
+  padding: 150px 400px;
+}
+
+.card {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background: white;
+  padding: 40px;
+  margin: 32px auto;
+  text-align: center;
+}
+
+.cards-categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 128px;
+  margin: 52px;
+}
+
+.card-category {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;;
+  background-color: #3f4052;
+}
+
+.card-category a {
+    text-decoration: none;
+    color: #5DE1E6;
+
+}
+
+.composition {
+    position: relative;
+    width: 42%;
+    left: 788px;
+    top: 145px;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    &__photo {
+        width: 55%;
+        box-shadow: 0 1.5px 4px rgba(black, .4);
+        border-radius: 4px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2px;
+        background-color: white;
+        padding: 50px;
+
+        &--p1 {
+            left: -32px;
+            top: -2px;
+        }
+
+        &--p2 {
+            right: 244px;
+            top: 30px;
+        }
+
+        &--p3 {
+            left: 20%;
+            top: 70px;
+        }
+
+        &:hover {
+            outline: 10px solid #A4B6F9;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5px 4px rgba(black, .5);
+            z-index: 20;
+        }
+
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+    //composition:hover composition__photo:not(:hover) {
+}
+
+
+
+// .composition  {
+//   margin-left: 760px;
+//   margin-top: 200px;
+//   padding: 0 135px;
+
+
+//   &__photo {
+//     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//     background: white;
+//     padding: 40px;
+//     text-align: center;
+//     z-index: 10;
+//   }
+
+//     &--p1 {
+//       position: relative;
+//       top: 163px;
+//       left: -90px;
+//   }
+
+//     &--p2 {
+//       position: relative;
+//       top: 10;
+//       left: 15px;
+//   }
+
+//     &--p3 {
+//       position: relative;
+//       top: 196px;
+//   }
+// }

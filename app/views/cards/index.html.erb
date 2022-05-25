@@ -1,0 +1,53 @@
+<%= render 'shared/navbar' %>
+
+<div class="cards-categories">
+  <div class="card-category">
+    <%= link_to 'Break the ice', break_the_ice_cards_path, class:'card-category-btn' %>
+  </div>
+
+  <div class="card-category">
+    <%= link_to 'Exposed', exposed_cards_path %>
+  </div>
+
+  <div class="card-category">
+    <%= link_to 'Risky Business', risky_business_cards_path %>
+  </div>
+
+  <div class="card-category">
+    <%= link_to "Let's Get Edgy", lets_get_edgy_cards_path %>
+  </div>
+
+  <div class="card-category">
+    <%= link_to 'Play It Safe', play_it_safe_cards_path %>
+  </div>
+</div>
+
+
+<div class="cards">
+  <div class="carousel-inner card">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <% @cards.each_with_index do |card, i| %>
+          <div class="carousel-item <%= "active" if i==0%>">
+            <%= card.content %>
+          </div>
+      <% end %>
+
+    <div class="controls">
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
