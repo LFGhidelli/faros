@@ -1,5 +1,7 @@
-<%= simple_form_for @card do |f|%>
-<%= f.input :content %>
-<%= f.input :genre %>
-<%= f.button :submit %>
+<%= simple_form_for @card do |f| %>
+  <%= f.input :content %>
+
+  <%= f.input :genre, collection: ['Break the ice', 'Exposed', 'Risky Business', "Let's Get Edgy", 'Play it Sage', 'Custom'], prompt: "Choose a genre" %>
+
+  <%= f.button :submit %>
 <% end %>

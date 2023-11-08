@@ -17,6 +17,7 @@ class CardsController < ApplicationController
   def create
     @card = Card.new(restaurant_params)
     @card.save
+    redirect_to cards_path
   end
 
   def edit
@@ -26,12 +27,12 @@ class CardsController < ApplicationController
   def update
     @card = Card.find(params[:id])
     @card.update(params(restaurant_params))
+    redirect_to cards_path
   end
 
   def destroy
     @card = Card.find(params[:id])
     @card.destroy
-
     redirect_to cards_path
   end
 
@@ -55,6 +56,12 @@ class CardsController < ApplicationController
     @cards = Card.where(genre: 'Play It Safe')
   end
 
+  def custom
+    @cards = Card.where(genre: 'Custom')
+  end
+
+
+  private
   def restaurant_params
     params.require(:card).permit(:content, :genre)
   end

@@ -36,11 +36,28 @@
   color: white;
 }
 
-.nav-link {
-  color: white !important;
+.nav_link {
+  color: white;
+  width: 110px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
 }
 
 .nav-logo {
   height: 50px;
   width: 100px;
+}
+
+.nav-item{
+  display: flex;
+  gap: 16px;
+}
+
+.create_btn {
+  width: 110px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #5DE1E6;
+  padding: 5px;
 }

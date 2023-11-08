@@ -1,0 +1,18 @@
+<div class='cards'>
+  <% @cards.each do |card| %>
+    <div class='card-show'>
+          <p><%= card.content %></p>
+    <%= link_to 'Edit', edit_card_path(card) %> <!-- Assuming you have a corresponding edit action -->
+    <%= link_to "Delete", card_path(card), method: :delete, data: { confirm: "Are you sure?" } %>
+    </div>
+  <% end  %>
+<div>
+
+
+<% @cards.each do |card| %>
+  <div class='card-show'>
+    <p><%= card.content %></p>
+    <%= link_to 'Edit', edit_card_path(card) %> <!-- Assuming you have a corresponding edit action -->
+    <%= link_to "Delete", card_path(card), method: :delete, data: { confirm: "Are you sure?" } %>
+  </div>
+<% end %>

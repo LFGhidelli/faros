@@ -8,10 +8,11 @@ Rails.application.routes.draw do
       get :risky_business
       get :lets_get_edgy
       get :play_it_safe
+      get :custom
     end
   end
 
   root to: 'cards#home'
   get '/user' => 'cards#index', :as => :user_root
-  # get '/cards', to: 'cards#break_the_ice'
+
 end

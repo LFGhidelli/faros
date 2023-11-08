@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
 .cards {
   padding: 150px 400px;
 }
@@ -68,7 +69,7 @@
         }
 
         &--p3 {
-            left: 20%;
+            left: 14%;
             top: 70px;
         }
 
@@ -87,6 +88,9 @@
     //composition:hover composition__photo:not(:hover) {
 }
 
+.carousel-inner {
+  background: linear-gradient(196deg, #a5b5f9 0%, #73fcf4 70%, #00d4ff 100%)
+}
 
 
 // .composition  {

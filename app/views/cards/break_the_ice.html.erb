@@ -1,3 +1,7 @@
-<% @cards.each do |card| %>
-<%= card.content %>
-<% end  %>
+<div class='cards'>
+  <% @cards.each do |card| %>
+    <div class='card-show'>
+      <p><%= card.content %></p>
+    </div>
+  <% end  %>
+<div>

@@ -196,7 +196,7 @@ Card.create(
 )
 
 Card.create(
-  content: 'What did you find espacially challenging when you were young?',
+  content: 'What did you find challenging when you were young?',
   genre: "Let's Get Edgy"
 )
 
