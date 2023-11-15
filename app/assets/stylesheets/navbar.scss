@@ -8,7 +8,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 55px;
 }
 
 .avatar {
@@ -42,6 +42,10 @@
   text-align: center;
   text-decoration: none;
   padding: 5px;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .nav-logo {
@@ -60,4 +64,21 @@
   text-decoration: none;
   background-color: #5DE1E6;
   padding: 5px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.saved_btn {
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #93CFF7;
+    padding: 5px;
+    border: none;
+}
+
+.saved_btn:hover {
+  text-decoration: none;
 }

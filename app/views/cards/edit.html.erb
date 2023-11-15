@@ -1,0 +1,11 @@
+<div class="form-container">
+  <div class="form">
+    <%= simple_form_for @card, url: card_path(@card), method: :patch do |f| %>
+      <%= f.input :content, input_html: { style: 'height: 170px;' }%>
+
+      <%# <%= f.input :genre, collection: ['Break the ice', 'Exposed', 'Risky Business', "Let's Get Edgy", 'Play it Sage', 'Custom'], prompt: "Choose a genre", selected: @card.genre %>
+
+      <%= f.button :submit, 'Update', class: 'btn-create' %>
+    <% end %>
+  </div>
+</div>

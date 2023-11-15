@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to cards_path, class: "navbar-brand" do %>
       <%= image_tag "faroscopy.jpg", class:'nav-logo' %>
     <% end %>
 
@@ -12,6 +12,7 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
+            <%= link_to 'Saved', saved_cards_path, class:'saved_btn' %>
             <%= link_to 'Create card', new_card_path, class:'create_btn' %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav_link" %>
           </li>

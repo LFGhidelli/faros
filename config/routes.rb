@@ -9,8 +9,13 @@ Rails.application.routes.draw do
       get :lets_get_edgy
       get :play_it_safe
       get :custom
+      get :saved
+    end
+    member do
+      patch :add
     end
   end
+
 
   root to: 'cards#home'
   get '/user' => 'cards#index', :as => :user_root

@@ -1,7 +1,11 @@
-<%= simple_form_for @card do |f| %>
-  <%= f.input :content %>
+  <div class="form-container">
+    <div class="form">
+      <%= simple_form_for @card do |f| %>
+        <%= f.input :content, input_html: { style: 'height: 170px;', maxlength: 80}%>
 
-  <%= f.input :genre, collection: ['Break the ice', 'Exposed', 'Risky Business', "Let's Get Edgy", 'Play it Sage', 'Custom'], prompt: "Choose a genre" %>
+        <%= f.input :genre, collection: ['Break the ice', 'Exposed', 'Risky Business', "Let's Get Edgy", 'Play it Sage', 'Custom'], prompt: "Choose a genre" %>
 
-  <%= f.button :submit %>
-<% end %>
+        <%= f.button :submit, class: 'btn-create' %>
+      <% end %>
+    </div>
+  </div>

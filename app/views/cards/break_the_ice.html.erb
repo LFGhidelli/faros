@@ -2,6 +2,15 @@
   <% @cards.each do |card| %>
     <div class='card-show'>
       <p><%= card.content %></p>
+      <% if card.favorite == true %>
+        <%= link_to add_card_path(card), method: :patch, class: 'favorite-icon' do %>
+          <i style="color: grey;" class="fa-solid fa-bookmark"></i>
+        <% end %>
+      <% else %>
+        <%= link_to add_card_path(card), method: :patch, class: 'favorite-icon' do %>
+          <i style="color: grey;" class="fa-regular fa-bookmark"></i>
+        <% end %>
+      <% end %>
     </div>
-  <% end  %>
-<div>
+  <% end %>
+</div>
